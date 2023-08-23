@@ -1,0 +1,57 @@
+.card{
+    display:flex;
+    align-items: center;
+    height:138px;
+    width: 457px;
+}
+#pp{
+    height: 130px;
+    width: 130px;
+    margin: 4px;
+    align-items: center;
+}    
+.info{
+    
+    height:130px;
+    width: 309px;
+    margin:4px 4px 4px 14px;
+    font-family: 'Roboto';
+    
+}
+#user{
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 16px;
+    margin-bottom: 0px;
+}
+#intro{
+    height: 20px;
+    font-size: 20px;
+    color: black;
+    margin-top: 14px;
+    margin-bottom: 0px;
+}
+.rating{
+    height: 20px;
+    display: flex;
+    align-items:center;
+    margin-top: 24px;
+    margin-bottom: 20px;
+
+}
+.logo{
+    height:20px;
+    width:20px;
+    margin-right: 14px;
+    
+}
+.des{
+    
+    font-size: 15px;
+    font-weight: medium;
+    color:#858991;
+    margin-right: 24px;
+
+}
