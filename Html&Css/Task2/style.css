@@ -1,0 +1,99 @@
+body{
+    background: #f6f7b7;
+}
+.title{
+    height:30px;
+    background: rgb(156, 5, 5);; 
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 15px;
+    color: #f6f7b7;
+    letter-spacing: 10px;
+    border-bottom: 10px solid rgba(255, 0, 0, 0.63) ;
+    margin:10px;
+}
+h3{
+    font-family: 'Hanken Grotesk', sans-serif;
+    background: rgb(21, 177, 21);
+    color: #f1f1e2;
+    margin: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+p{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    padding-left: 8px;
+    font-size: 17px;
+}
+b{
+    font-style: italic;
+    font-variant:small-caps;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.list{
+    font-style: italic;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color:#8f1414
+
+}
+#zl{
+    
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-decoration:none;
+    margin-left : 5px;
+}
+.gogo{
+    background: white;
+    height:110px;
+    width:220px;
+    border: 2px dashed rgb(207, 207, 207);
+    margin: 15px 0px 30px 10px;
+}
+img{
+    margin:15px 30px 15px 10px;
+}
+h4{
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: rgb(131, 131, 131);
+    font-size: 18px;
+    margin-left : 10px;
+}
+table{
+    margin-left : 10px;
+    background:rgb(189, 189, 189); 
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: black;
+    font-weight: 550;
+}
+form{
+    font-family: 'sans-serif';
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    display:block;
+    margin-left:5px;
+    margin-bottom: 10px;
+
+}
+input,textarea{
+    font-weight: bold;
+    margin-left : 5px;
+    
+}
+button{
+    height :28px;
+    width:100px;
+    margin:5px 0px 10px 10px;
+    background:rgb(221, 218, 218);
+    border:1px solid black;
+}
