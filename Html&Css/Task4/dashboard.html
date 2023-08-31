@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--local css-->
+    <link rel="stylesheet" href="style_dashboard.css" />
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@1&family=Hanken+Grotesk&family=PT+Serif&family=Quicksand:wght@500&family=Roboto:wght@400;500;700&family=Urbanist:wght@300&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="webpage">
+      <div class="container-header">
+        <nav class="navbar navbar-expand-lg navbar-dark " >
+          <div class="container-fluid ">
+            <a class="navbar-brand" href="#">
+              <img
+                src="drive/icons/logo used in header.svg"
+                alt="Logo"
+                id="header-logo"
+              />
+            </a>
+            
+            
+            <div
+              class="collapse navbar-collapse justify-content-end "
+              id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item">
+                  <div class="botborder">
+                    <a
+                      class="nav-link active "
+                      id="dashboard"
+                      data-toggle="tab"
+                      aria-current="page"
+                      href="#"
+                      >DASHBOARD</a
+                    >
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contents" data-toggle="tab" href="#"
+                    >CONTENTS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="users" data-toggle="tab" href="#"
+                    >USERS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="reports" data-toggle="tab" href="#"
+                    >REPORTS</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="admin" data-toggle="tab" href="#"
+                    >ADMIN</a
+                  >
+                </li></ul>
+              </div>
+                <div class="sp">
+                <a class="navbar-brand " href="#">
+                  <img
+                    src="drive/icons/alerts.svg"
+                    alt="Logo"
+                    id="header-logo"
+                  />
+                  <span
+                    class="position-absolute translate-middle badge rounded-pill bg-primary"
+                    style="font-size: 0.7rem"
+                    >2</span
+                  >
+                </a>
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="drive/icons/announcements.svg"
+                    alt="Logo"
+                    id="header-logo"
+                  />
+                  <span
+                    class="position-absolute translate-middle badge rounded-pill bg-primary"
+                    style="font-size: 0.7rem"
+                    >1</span
+                  >
+                </a>
+                <a class="navbar-brand" href="#">
+                  <img
+                    src="drive/quantum screen assets/icons/account_circle.svg"
+                    alt="Logo"
+                    id="header-logo"
+                  />
+                  <span
+                    class="position-absolute translate-middle badge rounded-pill bg-light text-dark"
+                    style="font-size: 0.7rem"
+                    >1</span>
+                </a>
+                <a class="icon" href="javascript:void(0);" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                  <img src="drive/icons/hamburger-menu.svg">
+                </a>
+                
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="container-tab">
+        <div class="courses">
+          <img src="drive/icons/courses.svg" />
+          <h4>4 Courses</h4>
+        </div>
+        <div class="classes">
+          <img src="drive/icons/classes.svg" />
+          <h4>4 Classes</h4>
+        </div>
+      </div>
+      <div class="container-sort">
+        <div class="showing">
+          Showing 4 of 4 courses
+        </div>
+        <div class="sort">
+          Sort by:
+          <select id="dd" >
+            <option>Course Name</option>
+            <option>Class Name</option>
+            <option>Both</option>
+          </select>
+          <img src="drive/icons/sort.svg" />
+        </div>
+      </div>
+
+
+      <div class="container-grid">
+        <div class="container-grid-one">
+          <div class="one">
+            <img src="drive/images/imageMask-1.svg" class="cover-img">
+             <div class="info">
+              <p><b>Acceleration</b></p>
+              <p>Physics &nbsp&nbsp&nbsp   Grade 7+2</p>
+              <p><b>14</b> Units &nbsp <b>18</b> Lessons &nbsp <b>24</b> Topics</p>
+              <!--<span class="toggle-dropdown" id="toggledropdown">
+                <img src="drive/icons/arrow-down.svg" alt="dropdown">
+              </span>-->
+              <select class="dropdown">
+                <option>Mr. Frank's Class B</option>
+                <option>Mr. Frank's Class A</option>
+                <option>All Classes</option>
+              </select>
+              <p class="small">50 Students &nbsp  21-Jan-2020 - 21-Aug-2020</p>
+             </div>
+            <img src="drive/icons/favourite.svg" width="30px" id="fav" >
+          </div>
+          <hr class="hrline">
+          <div class="one-icons">
+            <img src="drive/icons/preview.svg">
+            <img src="drive/icons/manage course.svg">
+            <img src="drive/icons/grade submissions.svg">
+            <img src="drive/icons/reports.svg">
+          </div>  
+        </div>
+
+
+        <div class="container-grid-one">
+          <div class="one">
+            <img src="drive/images/imageMask-2.svg" class="cover-img">
+             <div class="info">
+              <p><b>Displacement Velocity and<br>Speed</b></p>
+              <p>Physics <b>2</b> &nbsp&nbsp&nbsp   Grade 7+2</p>
+              <p><b>2</b> Units &nbsp <b>15</b> Lessons &nbsp <b>20</b> Topics</p>
+              <!--<span class="toggle-dropdown" id="toggledropdown">
+                <img src="drive/icons/arrow-down.svg" alt="dropdown">
+              </span>-->
+              <select class="dropdown">
+                <option>No Classes</option>
+                <option>Mr. Frank's Class B</option>
+                <option>Mr. Frank's Class A</option>
+                <option>All Classes</option>
+              </select>
+              <p style="display: block; margin-bottom: 10px;">&nbsp</p>
+             </div>
+            <img src="drive/icons/favourite.svg" width="30px" id="fav" >
+          </div>
+          <hr class="hrline">
+          <div class="one-icons">
+            <img src="drive/icons/preview.svg">
+            <img src="drive/icons/manage course.svg" class="op">
+            <img src="drive/icons/grade submissions.svg" class="op">
+            <img src="drive/icons/reports.svg">
+          </div>  
+        </div>
+
+
+        <div class="container-grid-one">
+          <div class="one">
+            <img src="drive/images/imageMask.svg" class="cover-img">
+             <div class="info">
+              <p><b>Introduction to Biology:Micro<br>organisms and how they affec...</b></p>
+              <p>Biology &nbsp&nbsp&nbsp   Grade 4+1</p>
+              <p><b>5</b> Units &nbsp <b>16</b> Lessons &nbsp <b>22</b> Topics</p>
+              <!--<span class="toggle-dropdown" id="toggledropdown">
+                <img src="drive/icons/arrow-down.svg" alt="dropdown">
+              </span>-->
+              <select class="dropdown">
+                <option>All Classes</option>
+                <option>Mr. Frank's Class B</option>
+                <option>Mr. Frank's Class A</option>  
+              </select>
+              <p>500 Students &nbsp</p>
+             </div>
+            <img src="drive/icons/favourite.svg" width="30px" id="fav" >
+          </div>
+          <hr class="hrline">
+          <div class="one-icons">
+            <img src="drive/icons/preview.svg">
+            <img src="drive/icons/manage course.svg" class="op">
+            <img src="drive/icons/grade submissions.svg"class="op">
+            <img src="drive/icons/reports.svg">
+          </div>  
+        </div>
+
+        
+        <div class="container-grid-one">
+          <p id="exp">EXPIRED<p>
+          <div class="one">
+            
+            <img src="drive/images/imageMask-3.svg" class="cover-img-3">
+             <div class="info">
+              <p><b>Introduction to High School Mathematics</b></p>
+              <p>Maths &nbsp&nbsp&nbsp   Grade 8+3</p>
+              
+              <!--<span class="toggle-dropdown" id="toggledropdown">
+                <img src="drive/icons/arrow-down.svg" alt="dropdown">
+              </span>-->
+              <select class="dropdown">
+                <option>Mr. Frank's Class A</option>
+                <option>Mr. Frank's Class B</option>
+                <option>All Classes</option>
+              </select>
+              <p>44 Students &nbsp 14-Oct-2019 - 20-Oct-2020</p>
+             </div>
+            <img src="drive/icons/nonfav.JPG" width="30px" id="fav" >
+          </div>
+          <hr class="hrline">
+          <div class="one-icons">
+            <img src="drive/icons/preview.svg">
+            <img src="drive/icons/manage course.svg">
+            <img src="drive/icons/grade submissions.svg">
+            <img src="drive/icons/reports.svg">
+          </div>  
+        </div>
+
+
+      
+      
+      <div class="container-footer">
+          <p>About Us</p>&nbsp<div class="line"></div>&nbsp
+          <p>Contact</p>
+        </div>
+      </div>
+      <div class="below-footer">
+        <img src="drive/icons/logo used in footer.svg" id="bf-img" /><div class="line"></div>
+          <p id="bf-msg">Copyright © 2021-2022 &nbsp <b>Zeus Systems Pvt. Ltd. </b> &nbsp  All rights reserved</p>
+      </div>
+    </div>
+  </body>
+</html>
