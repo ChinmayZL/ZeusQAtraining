@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("/drive/quantum screen assets/Quicksand font 1/static/Quicksand-Regular.ttf")
+      format(".ttf");
+}
+$family: "Quicksand", sans-serif;
+$bg: rgb(202, 202, 240);
+$size: 100%;
+$a: auto;
+@mixin border-b($width: 3px, $color: black) {
+  border-bottom: $width solid $color;
+}
+
+body {
+  background-color: $bg;
+}
+.webpage {
+  background-color: $bg;
+  height: $size;
+  width: $size;
+}
+.container-header {
+  background-color: rgb(7, 7, 54);
+  height: 55px;
+  @include border-b(3px, rgb(56, 128, 196));
+}
+#header-logo {
+  margin: 0px;
+}
+.navbar-nav li a {
+  color: rgb(50, 209, 90);
+}
+
+.botborder a.active {
+  margin: 0px;
+  @include border-b(rgb(255, 255, 255));
+  padding: 8px;
+}
+.navbar-nav li a span {
+  background: blue;
+}
+
+.icon {
+  display: none;
+}
+.container-tab {
+  background: rgb(41, 207, 82);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 20px 100px 0px 100px;
+}
+
+.courses,
+.classes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+.courses {
+  @include border-b();
+}
+.container-sort {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include border-b(1px);
+  margin: 10px 100px 10px 100px;
+}
+.sort {
+  display: flex;
+}
+#dd {
+  border: none;
+  @include border-b(1px);
+  outline: none;
+  background-color: $bg;
+  width: 200px;
+}
+
+.container-grid {
+  margin: 10px 100px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+.container-grid-one {
+  min-width: 400px;
+  width: 500px;
+  height: 300px;
+  margin-top: 20px;
+  background: white;
+  padding: 10px;
+}
+
+.one {
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.cover-img {
+  width: 150px;
+  height: 180px;
+  object-fit: cover;
+}
+.cover-img-3 {
+  width: 150px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.op {
+  opacity: 0.5;
+}
+.info {
+  margin-top: 2px;
+  padding-left: 10px;
+  line-height: 1.2;
+  font-family: $family;
+}
+
+.dropdown {
+  border: none;
+  @include border-b(1px);
+  outline: none;
+  width: $size;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#fav {
+  align-self: start;
+}
+.hrline {
+  margin: 0px 20px;
+}
+.one-icons {
+  margin: 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+#exp {
+  position: absolute;
+  color: rgb(180, 13, 13);
+  background: rgb(199, 163, 163);
+  padding: 0px 10px;
+  transform: translateY(-10px);
+}
+.container-footer {
+  width: $size;
+  margin-left: $a;
+  margin-right: $a;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.line {
+  width: 0px;
+  height: 18px;
+  border: 1px solid #1817171f;
+  margin: 5px;
+}
+.below-footer {
+  width: $a;
+  height: 25px; /* Height of the footer */
+  display: flex;
+  justify-content: center;
+  background: rgb(158, 158, 179);
+}
+#bf-img {
+  height: 20px;
+  width: 100px;
+}
+#bf-msg {
+  font-size: 15px;
+  margin-top: 2px;
+  margin-left: 10px;
+  font-family: $family;
+  font-size: 12px;
+  justify-self: center;
+}
