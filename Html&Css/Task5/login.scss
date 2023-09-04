@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("/drive/quantum screen assets/Quicksand font 1/static/Quicksand-Regular.ttf")
+      format(".ttf");
+}
+
+$family: "Quicksand", sans-serif;
+$bg: rgb(217, 217, 245);
+$size: 100%;
+$a: auto;
+@mixin border-bottom {
+  border-bottom: 1px solid black;
+}
+@mixin border($width, $color) {
+  bottom: $width solid $color;
+}
+.webpage {
+  font-family: $family;
+  min-height: $size;
+  min-width: $size;
+  display: flex;
+  flex-direction: column;
+  background: $bg;
+}
+.container-header {
+  background: rgb(7, 7, 54);
+  height: 50px;
+  border-bottom: 5px solid rgb(56, 128, 196);
+}
+.header-logo {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.container-content {
+  border-top: 3px solid rgb(37, 230, 204);
+  margin-left: $a;
+  margin-right: $a;
+  margin-top: 20px;
+  height: $a;
+  width: 450px;
+  padding: 20px;
+  padding-top: 0px;
+  background: rgb(255, 255, 255);
+  h4 {
+    margin-left: $a;
+    margin-right: $a;
+  }
+}
+.heading {
+  display: flex;
+  width: $size;
+  h4 {
+    font-family: $family;
+    font-size: 25px;
+    margin-left: $a;
+    margin-right: $a;
+  }
+}
+.back {
+  display: inline;
+}
+.radio {
+  margin-top: 10px;
+  display: flex;
+  color: #222222;
+  accent-color: #1f7a54;
+}
+.form-group {
+  font-family: $family;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.exampleFormControlSelect1 {
+  font-family: $family;
+  font-size: 20px;
+  border: none;
+  @include border-bottom;
+  outline: none;
+  width: $size;
+  appearance: none;
+  -webkit-appearance: none;
+  flex: 1;
+  margin-top: 10px;
+}
+.toggle-dropdown {
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  transform: translateY(-18%);
+  cursor: pointer;
+}
+#exampleInputEmail1,
+#exampleInputPassword1 {
+  font-family: $family;
+  border: none;
+  @include border-bottom;
+  outline: none;
+  width: $size;
+}
+.right-align {
+  text-align: right;
+}
+
+.forgot {
+  font-family: $family;
+  font-size: 14px;
+  color: #156b29;
+}
+.form-group {
+  position: relative;
+}
+.toggle-password {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-110%);
+  cursor: pointer;
+}
+.remember-me {
+  display: flex;
+  margin: 20px 0px 0px 0px;
+  font-family: $family;
+  font-size: 14px;
+  font-weight: bold;
+  width: 384px;
+  color: #222222;
+  accent-color: #1f7a54;
+  align-items: center;
+}
+.but {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+#btn1 {
+  width: 50%;
+  margin-left: $a;
+  margin-right: $a;
+  padding: 10px 50px;
+  font-size: 16px;
+  background: #4caf50;
+  color: rgb(19, 17, 17);
+  border: none;
+  border-radius: 4px;
+}
+.container-footer {
+  margin-top: 10px;
+  align-self: center;
+  color: #1f7a54;
+  display: flex;
+  font-weight: bold;
+}
+.line {
+  width: 0px;
+  height: 24px;
+  @include border(1px, #0000001f);
+  margin: 10px;
+}
+.below-footer {
+  display: flex;
+  justify-content: center;
+  background: rgb(180, 180, 202);
+}
+#bf-img {
+  margin-top: 10px;
+  height: 30px;
+  width: 100px;
+}
+#bf-msg {
+  font-family: $family;
+  height: 20px;
+  margin-top: 16px;
+  margin-left: 10px;
+}
