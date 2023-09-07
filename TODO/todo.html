@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todocss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@1&family=Hanken+Grotesk&family=Open+Sans:ital,wght@1,500&family=PT+Serif&family=Quicksand:wght@500&family=Roboto:wght@400;500;700&family=Urbanist:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading"> My ToDo app !!! </h1>
+        <h3>Enter the Task in below text box:</h3>
+        <input type="text" placeholder="type here" id="tb" autofocus> 
+        <button id="btn1" onclick="addTask()">Add Entry</button>
+        <h3>Task List:</h3>
+        <ul id="entry">
+        </ul>
+        <div class="footer">
+            <button id="btn2">RESET</button>
+        </div>
+    </div>
+    <script src="todojs.js"></script>
+</body>
+</html>
