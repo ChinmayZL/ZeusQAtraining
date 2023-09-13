@@ -1,20 +1,6 @@
-/*
-const tb=document.getElementById("tb");
-//const getinfo=document.querySelector('#btn1')
-const info=document.querySelector('.p')
 
-console.log(tb.value)
-
-getinfo.addEventListener('click',()=>{
-    console.log("  was clicked !! ");
-    p.innerHTML='tb.value';
-});
-*/
 document.getElementById('btn1').addEventListener('click',fetchData);
 const tb = document.getElementById('tb')
-
-// This will return all the posts that belong to the first user
-
 
 
 
@@ -41,9 +27,7 @@ async function fetchData(){
         let response1 = await fetch(url1);
         let response2 = await fetch(url2);
                             
-        /*console.log(" reset was clicked !! ");
-        console.log(response2);
-        */
+       
         if(response1.status!=200){
             throw new Error("Network response was not ok, statuscode: " + response1.status);
         }
@@ -58,8 +42,7 @@ async function fetchData(){
         // Display the response data
         responsecontainer1.innerHTML=""
         responsecontainer1.innerHTML="<h2>User Information</h2>";
-        //responsecontainer1.innerHTML+=JSON.stringify(data1,null,2);
-        //responsecontainer1.innerHTML+=`<p>${JSON.stringify(data1,null,2)}</p>`
+        
         responsecontainer1.innerHTML+=
                 `
                 <p><b>id:</b>${data1.id}</p></b>
@@ -91,18 +74,7 @@ async function fetchData(){
 
         
         //responsecontainer2.innerHTML+=JSON.stringify(data2,null,2);
-        /*const Render = (contents) => {
-            contents.forEach((content) => {
-              const cards = `
-                <p>id:${content.id}</p>
-                <p>Name:</p>
-                <p>Username:</p>
-                <p>Email:</p>
-                <p>Address: street suite city zipcode geo lat lng</p>
-                <p>Phone:</p>
-                <p>Website:</p>
-                <p>Company: name catchPhrase bs</p>
-              `})}*/
+        
         
     }
     catch(error){
