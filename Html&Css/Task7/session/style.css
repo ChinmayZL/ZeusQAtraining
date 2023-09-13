@@ -1,0 +1,51 @@
+body{
+    background-image: url('bg.gif');
+}
+.container{
+    border:5px dashed rgb(9, 8, 20);
+    width:800px;
+    margin: 105px auto;
+    padding: 10px;
+    background-color:rgb(218, 236, 112);
+}
+.header{
+    
+    
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top:10px;
+    gap: 10px;
+    
+}
+
+#tb{
+    height: 25px;
+    width: 250px;
+    align-self: center;
+}
+
+.info,.post{
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    min-width: 350px;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+
+.info p,.post p{
+    margin:10px;
+}
+
+#btn1{
+    color:rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+}
